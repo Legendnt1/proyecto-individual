@@ -1,5 +1,7 @@
 Autor: César Augusto Aróstegui Alzamora
 
+Mira nuestra Landing Page:  [Landing Page](https://legendnt1.github.io/proyecto-individual/).
+
 # Heurísticas Aplicadas - Landing Page: Corporación Santa Rosita
 
 Este documento resume las heurísticas de diseño, estructura y usabilidad aplicadas en el desarrollo de la landing page e-commerce para la empresa **Corporación Santa Rosita E.I.R.L.**.
