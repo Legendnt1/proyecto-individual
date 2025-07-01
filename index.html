@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/x-icon" href="assets/icono.png" />
+    <title>Corporacion Santa Rosita E.I.R.L</title>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Menu Superior -->
+    <nav class="top-header">
+      <a href="#" class="logo">
+        <img src="assets/logo.png" alt="Logo" />
+      </a>
+      <!-- Botón Hamburguesa -->
+      <button class="menu-toggle" aria-label="Abrir menú">
+        &#9776;
+        <!-- Ícono de hamburguesa -->
+      </button>
+      <!-- MENÚ DE NAVEGACIÓN -->
+      <ul class="menu-horizontal">
+        <li>
+          <a href="#" id="marcas-toggle">Marcas</a>
+          <ul class="menu-vertical" id="marcas-menu">
+            <li><a href="#" data-brand="Toyota">Toyota</a></li>
+            <li><a href="#" data-brand="Nissan">Nissan</a></li>
+            <li><a href="#" data-brand="Mitsubishi">Mitsubishi</a></li>
+            <li><a href="#" data-brand="Hyundai">Hyundai</a></li>
+          </ul>
+        </li>
+        <li><a href="#productos">Respuestos</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contacto">Contactanos</a></li>
+        <li><a href="assets/files/terms&conditions.pdf" target="_blank">Terminos y Condiciones</a></li>
+      </ul>
+    </nav>
+
+    <!-- SECCIÓN HOME -->
+
+    <section class="home">
+      
+      <div class="home-content">
+        
+        <div class="home-text">
+          <h2>¡Bienvenido a Corporación Santa Rosita!</h2>
+          <p>REPUESTOS NUEVOS TODOS LOS DÍAS</p>
+          
+        </div>
+        
+        <div class="home-image">
+          <img
+            src="assets/tienda.jpg"
+            alt="Libro abierto representando aprendizaje e historia"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="productos" class="productos">
+      <h2>Repuestos disponibles</h2>
+      <div class="productos-container">
+        
+        <!-- SIDEBAR DE FILTROS -->
+        <aside class="productos-filtros">
+          
+          <!-- Marca -->
+          <div class="filter-group" data-filter="vendor">
+            <div class="filter-group-header">
+              <h3>Marca</h3>
+              <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <div class="filter-options" id="filter-vendors"></div>
+          </div>
+          
+          <!-- Modelo -->
+          <div class="filter-group" data-filter="model">
+            <div class="filter-group-header">
+              <h3>Modelo</h3>
+              <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <div class="filter-options" id="filter-models"></div>
+          </div>
+          
+          <!-- Año -->
+          <div class="filter-group" data-filter="year">
+            <div class="filter-group-header">
+              <h3>Año</h3>
+              <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <div class="filter-options" id="filter-years"></div>
+          </div>
+          
+          <!-- Precio -->
+          <div class="filter-group" data-filter="price">
+            <div class="filter-group-header">
+              <h3>Precio (S/)</h3>
+              <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <div class="price-slider">
+              <input type="range" id="range-min" step="0.01" />
+              <input type="range" id="range-max" step="0.01" />
+              <div class="range-values">
+                <span>S/ <span id="range-min-val">0</span></span>
+                <span>-</span>
+                <span>S/ <span id="range-max-val">0</span></span>
+              </div>
+            </div>
+          </div>
+
+        </aside>
+
+        <!-- Grid de Productos -->
+        <main class="productos-lista">
+          <div class="product-grid"></div>
+          <nav id="pagination" class="pagination"></nav>
+        </main>
+
+        <!-- Carrito (derecha) -->
+        <aside class="productos-carrito">
+          <h3>Carrito</h3>
+          <button id="clear-cart" class="clear-cart">Vaciar carrito</button>
+          <ul id="cart-items"></ul>
+          <div class="cart-total">
+            Total: <span id="cart-total">S/ 0.00</span>
+          </div>
+          <button id="checkout-button" class="checkout-button">Comprar productos</button>
+        </aside>
+
+      </div>
+    </section>
+
+  <!-- Formulario de pago (oculto por defecto) -->
+    <section id="checkout-form" class="checkout-form">
+      <h2>Formulario de pago</h2>
+      <form id="paymentForm" novalidate>
+        <div class="form-grupo">
+          <label for="cardName">Nombre en la tarjeta:</label>
+          <input type="text" id="cardName" required />
+        </div>
+        <div class="form-grupo">
+          <label for="cardNumber">Número de tarjeta:</label>
+          <input type="text" id="cardNumber" maxlength="19" placeholder="#### #### #### ####" required />
+        </div>
+        <div class="form-row">
+          <div class="form-grupo">
+            <label for="cardExpiry">Expiración (MM/AA):</label>
+            <input type="text" id="cardExpiry" maxlength="5" placeholder="MM/AA" required />
+          </div>
+          <div class="form-grupo">
+            <label for="cardCvv">CVV:</label>
+            <input type="text" id="cardCvv" maxlength="3" required />
+          </div>
+        </div>
+        <button type="submit" class="checkout-button">Pagar</button>
+      </form>
+      <div id="paymentMessage" class="checkout-message"></div>
+    </section>
+
+    
+    <!-- Sección Blog -->
+    <section class="blog" id="blog">
+      <h2>Repuestos originales para autos en Apurímac</h2>
+      <div class="blog-content">
+        <div class="blog-text">
+          <p>
+          En Repuestos Santa Rosa S.A.C nos especializamos en la venta de repuestos y accesorios para todo tipo de vehículos, 
+          ofreciendo calidad, confianza y un servicio personalizado en el corazón de Abancay. 
+          Contamos con un amplio stock de productos originales y alternativos para autos, camionetas, y motos, 
+          con marcas reconocidas a nivel nacional e internacional.
+          </p>
+          <p>
+            Ya sea que necesites frenos, filtros, baterías, lubricantes, llantas o componentes eléctricos, 
+            nuestro equipo está listo para asesorarte con atención rápida y profesional. También realizamos pedidos especiales a medida,
+             para que nunca te quedes sin lo que necesitas.
+          </p>
+        </div>
+        <div class="blog-video">
+          <iframe src="https://www.youtube.com/embed/llDpkDT-4uY" title="Blog de tienda"
+          allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Sección Contáctanos -->
+    <section class="contacto" id="contacto">
+      <h2>Contáctanos</h2>
+        <div class="contacto-instrucciones">
+          <p>
+            Completa el formulario con tus datos. Nuestro equipo se pondrá en
+            contacto contigo según la información proporcionada.
+          </p>
+          <p>
+            Recuerda usar un correo válido y seleccionar tu tipo de documento
+            correctamente. Si eres estudiante, indícalo para acceder a
+            beneficios exclusivos.
+          </p>
+        </div>
+      <div class="contacto-contenido">
+        <!-- FORMULARIO -->
+        <form class="formulario-contacto" id="formularioContacto" novalidate>
+          <div class="form-grupo form-obligatorio">
+            <label for="nombres">Nombres: <span class="mensaje-validacion">Complete el campo obligario</span></label> 
+            <input type="text" id="nombres" name="nombres" required />
+          </div>
+
+          <div class="form-grupo form-obligatorio">
+            <label for="apellidos">Apellidos: <span class="mensaje-validacion">Complete el campo obligario</span></label>
+            <input type="text" id="apellidos" name="apellidos" required />
+          </div>
+
+          <div class="form-grupo">
+            <label for="tipoDoc">Tipo de Documento:</label>
+            <select id="tipoDoc" name="tipoDoc">
+              <option value="dni">DNI</option>
+              <option value="pasaporte">Pasaporte</option>
+              <option value="carnet">Carnet de Extranjería</option>
+            </select>
+          </div>
+
+          <div class="form-grupo form-obligatorio">
+            <label for="telefono">Teléfono: <span class="mensaje-validacion">Complete el campo obligario</span></label>
+            <input type="tel" id="telefono" name="telefono" />
+          </div>
+
+          <div class="form-grupo">
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+              <option value="peru">Perú</option>
+              <option value="chile">Chile</option>
+              <option value="colombia">Colombia</option>
+              <option value="brasil">Brasil</option>
+              <option value="ecuador">Ecuador</option>
+            </select>
+          </div>
+
+          <div class="form-grupo form-obligatorio">
+            <label for="email">Correo electrónico: <span class="mensaje-validacion">Complete el campo obligario</span></label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-grupo form-obligatorio">
+            <label for="asunto">Asunto: <span class="mensaje-validacion">Complete el campo obligario</span></label>
+            <textarea id="asunto" name="asunto" rows="3"></textarea>
+          </div>
+
+          <div class="form-grupo">
+            <label>Preferencias de contacto:</label>
+            <div class="checkboxes">
+              <label
+                ><input type="checkbox" name="preferencia" value="correo" />
+                Correo</label
+              >
+              <label
+                ><input type="checkbox" name="preferencia" value="telefono" />
+                Teléfono</label
+              >
+            </div>
+          </div>
+
+          <div class="form-grupo">
+            <label>¿Eres importador?</label>
+            <div class="radios">
+              <label
+                ><input type="radio" name="importador" value="si" /> Sí</label
+              >
+              <label
+                ><input type="radio" name="importador" value="no" /> No</label
+              >
+            </div>
+          </div>
+
+          <button type="submit">Enviar</button>
+          <div class="contacto-instrucciones">
+            <div
+            id="mensajeEnviado"
+            class="mensaje-enviado"
+            style="display: none"
+            >
+            Mensaje enviado correctamente.
+          </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img
+            src="assets/logo.png"
+            alt="Logo"
+            class="footer-logo"
+            />
+            <p>Corporación Santa Rosita E.I.R.L</p>
+            <p>© <span id="anio-actual"></span> Todos los derechos reservados</p>
+          </div>
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="assets/files/policy.pdf" target="_blank">Política de Privacidad</a>
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="assets/files/terms&conditions.pdf" target="_blank">Términos y Condiciones</a>
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="assets/files/dataprotected.pdf" target="_blank">Protección de Datos</a>
+          </div>
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="https://www.facebook.com/profile.php?id=100065585915618" target="_blank"><i class="fa-brands fa-facebook-f social-icon"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter social-icon"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram social-icon"></i></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+
+    <script src="main.js"></script>
+  </body>
+</html>

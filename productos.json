@@ -1,0 +1,514 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Arandela de Tapón de Cárter Hyundai",
+      "vendor": "Hyundai",
+      "images": [
+        {
+          "src": "assets/products/arandela-hyundai.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "Accent",
+          "option2": "2020",
+          "price": "2.54"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Filtro de Aceite Accent (2014-2022)",
+      "vendor": "Hyundai",
+      "images": [
+        {
+          "src": "assets/products/filtro-aceite-accent.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "Accent",
+          "option2": "2020",
+          "price": "23.55"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Filtro de Aire Toyota Yaris",
+      "vendor": "Toyota",
+      "images": [
+        {
+          "src": "assets/products/filtro-aire-yaris.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "Yaris",
+          "option2": "2018",
+          "price": "49.90"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Pastillas de Freno Nissan Sentra",
+      "vendor": "Nissan",
+      "images": [
+        {
+          "src": "assets/products/pastillas-freno-sentra.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "Sentra",
+          "option2": "2019",
+          "price": "35.75"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Aceite de Motor Mobil 1 5W-30",
+      "vendor": "Mobil",
+      "images": [
+        {
+          "src": "assets/products/aceite-mobil1.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "Universal",
+          "option2": "2021",
+          "price": "120.00"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Bujías NGK Iridium",
+      "vendor": "NGK",
+      "images": [
+        {
+          "src": "assets/products/bujias-ngk.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "Universal",
+          "option2": "2021",
+          "price": "15.00"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Filtro de Combustible Toyota Corolla",
+      "vendor": "Toyota",
+      "images": [
+        {
+          "src": "assets/products/filtro-combustible-corolla.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "Corolla",
+          "option2": "2020",
+          "price": "25.00"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Pastillas de Freno Mitsubishi Lancer",
+      "vendor": "Mitsubishi",
+      "images": [
+        {
+          "src": "assets/products/pastillas-freno-lancer.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "Lancer",
+          "option2": "2019",
+          "price": "30.00"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Aceite de Motor Nissan X-Trail",
+      "vendor": "Nissan",
+      "images": [
+        {
+          "src": "assets/products/aceite-xtrail.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "X-Trail",
+          "option2": "2021",
+          "price": "45.00"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Filtro de Aire Hyundai Tucson",
+      "vendor": "Hyundai",
+      "images": [
+        {
+          "src": "assets/products/filtro-aire-tucson.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "Tucson",
+          "option2": "2020",
+          "price": "20.00"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Arandela de Tapón de Cárter Toyota",
+      "vendor": "Toyota",
+      "images": [
+        {
+          "src": "assets/products/arandela-toyota.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "Corolla",
+          "option2": "2020",
+          "price": "3.00"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Filtro de Aceite Toyota Camry (2018-2022)",
+      "vendor": "Toyota",
+      "images": [
+        {
+          "src": "assets/products/filtro-aceite-camry.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "Camry",
+          "option2": "2020",
+          "price": "27.00"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Pastillas de Freno Toyota Hilux",
+      "vendor": "Toyota",
+      "images": [
+        {
+          "src": "assets/products/pastillas-freno-hilux.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "Hilux",
+          "option2": "2019",
+          "price": "40.00"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Aceite de Motor Toyota 0W-20",
+      "vendor": "Toyota",
+      "images": [
+        {
+          "src": "assets/products/aceite-toyota.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "Universal",
+          "option2": "2021",
+          "price": "50.00"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Bujías Denso Iridium",
+      "vendor": "Denso",
+      "images": [
+        {
+          "src": "assets/products/bujias-denso.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "Universal",
+          "option2": "2021",
+          "price": "18.00"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Filtro de Combustible Nissan Versa",
+      "vendor": "Nissan",
+      "images": [
+        {
+          "src": "assets/products/filtro-combustible-versa.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "Versa",
+          "option2": "2020",
+          "price": "22.00"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Pastillas de Freno Nissan Altima",
+      "vendor": "Nissan",
+      "images": [
+        {
+          "src": "assets/products/pastillas-freno-altima.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "Altima",
+          "option2": "2019",
+          "price": "37.00"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Aceite de Motor Nissan 5W-30",
+      "vendor": "Nissan",
+      "images": [
+        {
+          "src": "assets/products/aceite-nissan.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "Universal",
+          "option2": "2021",
+          "price": "55.00"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Filtro de Aire Mitsubishi Outlander",
+      "vendor": "Mitsubishi",
+      "images": [
+        {
+          "src": "assets/products/filtro-aire-outlander.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "Outlander",
+          "option2": "2020",
+          "price": "21.00"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Pastillas de Freno Mitsubishi ASX",
+      "vendor": "Mitsubishi",
+      "images": [
+        {
+          "src": "assets/products/pastillas-freno-asx.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "ASX",
+          "option2": "2019",
+          "price": "33.00"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "title": "Aceite de Motor Mitsubishi 5W-30",
+      "vendor": "Mitsubishi",
+      "images": [
+        {
+          "src": "assets/products/aceite-mitsubishi.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "Universal",
+          "option2": "2021",
+          "price": "52.00"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Arandela de Tapón de Cárter Nissan",
+      "vendor": "Nissan",
+      "images": [
+        {
+          "src": "assets/products/arandela-nissan.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "Altima",
+          "option2": "2020",
+          "price": "3.50"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Filtro de Aceite Hyundai Elantra (2017-2022)",
+      "vendor": "Hyundai",
+      "images": [
+        {
+          "src": "assets/products/filtro-aceite-elantra.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "Elantra",
+          "option2": "2020",
+          "price": "25.00"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Pastillas de Freno Hyundai Sonata",
+      "vendor": "Hyundai",
+      "images": [
+        {
+          "src": "assets/products/pastillas-freno-sonata.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "Sonata",
+          "option2": "2019",
+          "price": "38.00"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Aceite de Motor Hyundai 0W-20",
+      "vendor": "Hyundai",
+      "images": [
+        {
+          "src": "assets/products/aceite-hyundai-0w20.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "Universal",
+          "option2": "2021",
+          "price": "48.00"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "title": "Bujías NGK Estándar",
+      "vendor": "NGK",
+      "images": [
+        {
+          "src": "assets/products/bujias-ngk-estandar.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "Universal",
+          "option2": "2021",
+          "price": "12.00"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "title": "Filtro de Combustible Hyundai Accent",
+      "vendor": "Hyundai",
+      "images": [
+        {
+          "src": "assets/products/filtro-combustible-accent.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "Accent",
+          "option2": "2020",
+          "price": "24.00"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "title": "Pastillas de Freno Toyota Tacoma",
+      "vendor": "Toyota",
+      "images": [
+        {
+          "src": "assets/products/pastillas-freno-tacoma.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "Tacoma",
+          "option2": "2019",
+          "price": "42.00"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "title": "Aceite de Motor Toyota 5W-30",
+      "vendor": "Toyota",
+      "images": [
+        {
+          "src": "assets/products/aceite-toyota-5w30.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "Universal",
+          "option2": "2021",
+          "price": "53.00"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "title": "Filtro de Aire Nissan Rogue",
+      "vendor": "Nissan",
+      "images": [
+        {
+          "src": "assets/products/filtro-aire-rogue.webp"
+        }
+      ],
+      "variants": [
+        {
+          "option1": "Rogue",
+          "option2": "2020",
+          "price": "19.00"
+        }
+      ]
+    }
+  ]
+}
